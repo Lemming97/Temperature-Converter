@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment 4">
+    <title>A1P4 Temperature Converter</title>
+</head>
+
+<body>
+    <h1>A1P4 Temperature Converter</h1>
+    <p>Enter your celcius temp and we will calculate your fahrenheit temp.</p>
+    <script>
+        //variables
+        var celsius;
+        var far;
+        var freezing = 32;
+        
+        // calculate the temp
+        celsius = window.prompt("Please enter the temp: ");
+        far = ( 9 / 5 ) * celsius + 32;
+
+       //write code to user
+        document.write("<p>You entered ", celsius + " as the temp.</p>");
+        document.write("<p> ", celsius + " degrees  celsius is equal to ", + far + " degrees in fahrenheit!</p>");
+        
+        // if else statements
+        if (far <= freezing) {
+            window.alert(celsius + " degree celsius is equal to " + far+ " degrees fahrenheit! And that is Freezing Cold!");
+            
+        }
+        else {
+            window.alert(celsius + " degrees celsius is equal to " + far + " degrees fahrenheit! Temperature is above freezing!");
+        }
+        
+    </script>
+</body>
+
+</html>
